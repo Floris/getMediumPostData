@@ -41,12 +41,11 @@ app.post('/', (req, res) => {
 
     const body = _.pick(req.body, ['url']);
 
-    // const url = body.url; // post request, get url
+    const url = body.url; // post request, get url
 
-    const url = req.query.url; // get request, get url
+    // const url = req.query.url; // get request, get url
 
     console.log('url', url);
-    console.log(req.query.url)
 
     if (!url) {
         console.log('no url');
