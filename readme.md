@@ -12,5 +12,6 @@ There is a online version of the API.
 Check it out, you can use the test URL or use your own.
 
 `MEDIUM_URL = https://medium.com/@nebulasio/latest?format=json`
+
 `https://get-medium-posts.herokuapp.com/?url=MEDIUM_URL`
 
