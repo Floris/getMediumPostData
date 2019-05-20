@@ -36,14 +36,16 @@ app.all('/', function (req, res, next) {
 //     next();
 // });
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
     // const url = 'https://medium.com/@nebulasio/latest?format=json'; // test medium url
+
+    console.log(req.body)
 
     const body = _.pick(req.body, ['url']);
 
-    const url = body.url; // post request, get url
+    // const url = body.url; // post request, get url
 
-    // const url = req.query.url; // get request, get url
+    const url = req.query.url; // get request, get url
 
     console.log('url', url);
 
